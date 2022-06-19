@@ -20,7 +20,7 @@ Improve the model and repeat the process
 
 Typical Sturcture of the project
 
-![alt text](Photos_1\Strucutre_of_pro.png)
+![ScreenShot](/screenshots/Strucutre_of_pro.png)
 
 After downloading all the images, we will prepare the data object for the training.
 Here, we are using a vanila style in sagemaker.
@@ -35,11 +35,11 @@ In *model.py* we will be writing only the infrastructure of the model. In this c
 **Why are these environment variables important anyway?**
 Well, they will be automatically passed to our script by SageMaker, so that we know where the data sets are, where to save the model, and how many GPUs we have. So, if you write your local code this way, there won't be anything to change to run it on SageMaker.This feature is called 'script mode', it's the recommended way to work with built-in frameworks on SageMaker.
 
-![alt text](Photos_1\script_mode.png)
+![ScreenShot](/screenshots/script_mode.png)
 
 ### Train on the notebook instance (aka 'local mode')
 
 Train on the notebook instance (aka 'local mode')
 Our code runs fine. Now, let's try to run it inside the built-in TensorFlow environment provided by SageMaker. For fast experimentation, let's use local mode.
 
-![alt text](Photos_1\local_mode.png)
+![ScreenShot](/screenshots/local_mode.png)
